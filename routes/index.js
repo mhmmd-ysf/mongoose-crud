@@ -4,6 +4,7 @@ const {ControllerMember} = require('../controllers/index')
 const {ControllerTransaction} = require('../controllers/index')
 
 route.get('/books', ControllerBook.findAll)
+route.get('/books/name', ControllerBook.find)
 route.post('/books', ControllerBook.create)
 route.put('/books/:id', ControllerBook.update)
 route.delete('/books/:id', ControllerBook.delete)

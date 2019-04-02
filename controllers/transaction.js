@@ -47,7 +47,6 @@ class ControllerTransaction {
       })
   }
   static delete(req, res) {
-    console.log(req.params.id)
     Transaction.deleteOne({ _id: ObjectID(req.params.id) })
       .then(data => {
         res.status(200).json(data)

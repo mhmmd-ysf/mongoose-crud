@@ -11,6 +11,9 @@ class ControllerBook {
         res.status(500).json(err)
       })
   }
+  static find(req, res) {
+    console.log(req.query)
+  }
   static create(req, res) {
     let input = req.body
     let newBook = {
